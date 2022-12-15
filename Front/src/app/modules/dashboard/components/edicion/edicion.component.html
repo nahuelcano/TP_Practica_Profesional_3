@@ -1,0 +1,45 @@
+<!-- <h1 mat-dialog-title class="titulo">Nuevo Producto</h1> -->
+<div class="wrapper">
+    <div class="cuerpito">
+        <div mat-dialog-content class="formulario">
+            <form #productsForm="ngForm" (ngSubmit)="onProductsCreate(productsForm.value)">
+                <p>Nombre</p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Nombre</mat-label>
+                    <input matInput type="text" name="name" [(ngModel)]="nombre" class="inputs">
+                </mat-form-field>
+                <p>Ingredientes</p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Ingredientes</mat-label>
+                    <input matInput type="text" name="ingredientes" [(ngModel)]="ing" class="inputs">
+                </mat-form-field>
+                <p>Precio</p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Precio</mat-label>
+                    <input matInput type="text" name="precio" [(ngModel)]="pre" class="inputs">
+                </mat-form-field>
+                <p>Stock</p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Stock</mat-label>
+                    <input matInput type="text" name="stock" [(ngModel)]="sto" class="inputs">
+                </mat-form-field>
+                <p>Categoria</p>
+                <mat-form-field appearance="fill">
+                    <mat-label>Categoria</mat-label>
+                    <mat-select [(ngModel)]="catego" name="id_categoria">
+                        <mat-option *ngFor="let cat of listaCat" #textCat (click)="select(textCat.value)"
+                            value={{cat.id}}>
+                            {{cat.name}}
+                        </mat-option>
+                    </mat-select>
+                    <mat-hint align="end">Seleccione una categoría</mat-hint>
+                </mat-form-field>
+                <p></p> 
+                <button mat-button type="submit" value="Add Producto" style="color: #d63384; justify-content: center;" (click)="backClicked()" >Guardar</button>
+            </form>
+        </div>
+        <div mat-dialog-actions>
+
+        </div>
+    </div>
+</div>

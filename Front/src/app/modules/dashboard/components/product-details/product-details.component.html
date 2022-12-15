@@ -1,0 +1,23 @@
+<div class="wrapper">
+    <div class="pull-left" *ngIf="prod!=null">
+        <!-- {{id}} -->
+        <h4 class="list-group-item-header header"> {{prod.name}}</h4>
+        <div class="pull right">
+            <!-- <img [src]="prod.imagepath" alt="prod.name" style="max-height: 100px">  -->
+           
+        </div>
+        <p class="list-group-item-description">{{prod.ingredientes}}</p>
+        <div class="list-group-item-description stockpre">
+            <p>${{prod.precio}}</p>
+            <span></span>
+            <p>Stock: {{prod.stock}} unidades</p>
+        </div>
+        <p class="list-group-item-description"></p>
+    
+    </div>
+    
+    <button mat-button (click)="volver()">
+        <!-- aca corroboraria que el usuario este logueado -->
+        <p class="comprar">volver</p>
+    </button>
+</div>

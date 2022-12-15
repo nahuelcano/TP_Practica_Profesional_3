@@ -1,0 +1,19 @@
+.wrapper {
+    // padding-top: 100px;
+    // height: 100vh;
+    // height: 60vh;
+   padding-left: 5%;
+   padding-top: 5%;
+   padding-right: 5%;
+   color: white;
+}
+.stockpre{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    // justify-content: center;
+    column-gap: 20px;
+}
+.header{
+    font-weight: bold;
+}

@@ -1,0 +1,36 @@
+<div class="wrapper">
+    <!-- <h3>titulo de las comidas</h3> -->
+    <section class="search__container">
+        <div class="filtrador">
+            <mat-form-field appearance="fill">
+                <mat-label>Categoria</mat-label>
+                <mat-select [(ngModel)]="catego">
+                    <mat-option *ngFor="let cat of listaCat" #textCat (click)="select(textCat.value)" value={{cat.id}}>
+                        {{cat.name}}
+                    </mat-option>
+                </mat-select>
+                <mat-hint align="end">Seleccione una categoría</mat-hint>
+            </mat-form-field>
+        </div>
+        <input type="text" class="form-control search__input" #textSearch (keyup)="onSearch(textSearch.value)">
+        <!-- [formControl]="search" -->
+        <div class="boton-limpiar-filtrado text-primary">
+            <div class="limpiar">
+                <!-- AGREGAR EL BOTON PARA LIMPIAR EL FILTRADO TIPO SEARCH='' Y CAT='' -->
+                <button mat-raised-button color="primary" class="botonLimpiar" (click)="handleClear()"
+                    (click)="textSearch.value=''">
+                    <span class="limpiarVal">Limpiar</span></button>
+            </div>
+        </div>
+    </section>
+    <div class="grid carta text-left">
+        <div class="grid_item clearfix" *ngFor="let item of listaProductosF">
+            <div class="pull-left"> 
+                <gdp-card [prod]=item></gdp-card>
+            </div>
+
+        </div>
+    </div>
+
+
+</div>

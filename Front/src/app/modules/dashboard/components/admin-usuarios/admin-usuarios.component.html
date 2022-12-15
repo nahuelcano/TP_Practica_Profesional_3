@@ -1,0 +1,63 @@
+<div class="wrapper bar">
+<div>
+    <!-- <button mat-raised-button color="primary" (click)="addProduct()" class="apButton">Agregar Producto</button> -->
+    <!-- agregar buscador -->
+</div>
+ 
+<table mat-table [dataSource]="listaUsuarios" class='tablaUser' style="text-align: center;">
+    
+    <!-- Id Column -->
+    <ng-container matColumnDef="id" class="mat-col" style="justify-content: center;">
+        <th mat-header-cell *matHeaderCellDef>ID</th>
+        <td mat-cell *matCellDef="let item">{{item.id}}</td>
+    </ng-container>
+
+     <!-- Name Column  -->
+    <ng-container matColumnDef="name" class="mat-col" style="justify-content: center;">
+        <th mat-header-cell *matHeaderCellDef> Nombre</th>
+        <td mat-cell *matCellDef="let item">{{item.name}}</td>
+    </ng-container>
+
+     <!-- Email Column  -->
+    <ng-container matColumnDef="email" class="mat-col" style="justify-content: center;">
+        <th mat-header-cell *matHeaderCellDef> Email</th>
+        <td mat-cell *matCellDef="let item">{{item.email}}</td>
+    </ng-container>
+
+     <!-- Precio Column  -->
+    <ng-container matColumnDef="role" class="mat-col" style="text-align: center;">
+        <th mat-header-cell *matHeaderCellDef>Rol</th>
+        <td mat-cell *matCellDef="let item">{{item.role}}</td>
+    </ng-container>
+
+
+    <ng-container matColumnDef="Editar" class="mat-col" style="text-align: center;">
+        <th mat-header-cell *matHeaderCellDef>Editar</th>
+        <td mat-cell *matCellDef="let row">
+            <button mat-icon-button class="user-icon edit" aria-label="Icon-button with user icon">
+                <span class="material-icons">
+                    edit
+                </span>
+            </button>
+            <button mat-icon-button class="user-icon delete" aria-label="Icon-button with user icon">
+                <span class="material-icons">
+                    delete
+                </span>
+            </button>
+        </td>
+
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns" style="text-align: center;"> </tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns" class="detail-row" style="text-align: center;"></tr>
+
+</table>
+
+    
+
+
+
+
+
+
+</div>

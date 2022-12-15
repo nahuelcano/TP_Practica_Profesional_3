@@ -1,0 +1,94 @@
+
+:root{
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #f5a637;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #f5a637;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #e9ecef;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: "Lato", sans-serif;
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+}
+
+*,:after,:before {
+  box-sizing: border-box;
+}
+::selection {
+  background-color: rgb(142, 5, 112);
+  color: #fff;
+}
+p{
+  color: white !important;
+}
+
+
+.text-primary,a, .logo {
+  color: #d63384 !important;
+}
+.logo{
+  color-scheme: #d63384;
+}
+
+.container px-4{
+  background-color: #000 !important;
+  
+}
+
+
+
+.list-inline,.list-unstyled {
+  list-style: none;
+  padding-left: 0;
+}
+.text-center{
+  text-align: center !important; 
+}
+.tam{
+  font-size: 6vw;
+}
+
+.butt{
+  width: 420px!important;
+  // min-width: 5%!important;
+  height:max-content;
+  
+}
+.tim{
+  font-size: 2vw;
+  padding-bottom: 20px;
+}
+.sp{
+  padding-top: 50px;
+}
+.wrapper{
+  padding-top: 300px;
+  color: #d63384;
+  background-image: url(../../../assets/fondoBar.jpg);
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+  // height: 60vh;
+  background-attachment: fixed;
+}
+
+
+
+

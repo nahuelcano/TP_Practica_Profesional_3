@@ -1,0 +1,17 @@
+@use 'styles' as styles;
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.bgcolor {
+  background-color: styles.colors(warnDark);
+  // min-width:fit-content !important;
+  min-width:max-content !important;
+  
+}
+
+a:-webkit-any-link {
+  text-decoration: none !important;
+  color: white !important;
+}

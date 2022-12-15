@@ -1,0 +1,83 @@
+@use 'styles' as styles;
+section.search__container {
+    display: flex;
+        justify-content: space-between;
+        height: auto;
+        width: 50%;
+        margin: 1rem auto;
+        text-align: center;
+        align-content: center;
+        padding: 1rem;
+        // background-color:#050505;
+        background-color: #121111;
+        border-radius: 0.5rem;
+}
+// .filtrador{
+//     // color: #cdd4da;
+// }
+.search__input {
+    width: 42%;
+    align-content: center;
+    padding: 1rem 3.75rem;
+    font-size: 1.25rem;
+    font-weight: 400;
+    background-color: white;
+    line-height: 1.5;
+    border: 2px solid #cdd4da;
+    border-radius: 1.25rem;
+    height: calc(1.25rem + 2px);
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+.botonLimpiar{
+    padding-top: 1rem;
+    text-align: center !important ;
+    justify-content: center!important;
+}
+.limpiarVal{
+    text-align: center;
+    align-items: center;
+}
+
+.mat-primary{
+    text-align: center !important;
+}
+::ng-deep .mat-tab-label-active {
+    color: #be2b74 !important;
+}
+// .titulo{
+//     color: #d63384 !important;
+//     font-weight: bold;
+// }
+.text-primary, .comprar {
+    color: #d63384 !important;
+}
+a:-webkit-any-link {
+    text-decoration: none !important;
+    color: rgb(255, 255, 255) !important;
+}
+.spacer {
+    flex: 1 1 auto;
+}
+
+.mat-tab-label-active,.mat-tab-label-content{
+    color: #d63384 !important;
+}
+.wrapper{
+    text-align:start;
+    // background-color: #050505;
+    background-color: #121111;
+}
+.carta{
+    text-align: center;
+}
+.grid {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+:focus{
+    outline-color: #be2b74;
+}
+
+

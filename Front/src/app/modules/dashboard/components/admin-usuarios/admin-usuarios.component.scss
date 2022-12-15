@@ -1,0 +1,91 @@
+@use 'styles' as styles;
+
+.detail-row {
+    height: 0;
+
+}
+
+.mat-col {
+    flex: 0 0 100px !important;
+    white-space: unset !important;
+}
+
+.edit {
+    color: rgb(236, 236, 107);
+}
+
+.delete {
+    color: rgb(188, 7, 7);
+}
+
+.table {
+    // justify-content: center;
+    width: 100%;
+
+}
+
+th.mat-header-cell {
+    text-align: center !important;
+    color: #f8f6f7;
+    font-weight: bold;
+    font-size: large;
+
+}
+.tablaUser{
+    justify-content: center;
+
+}
+.bar {
+    min-width: 100%;
+    background-color: #181717;
+    padding-left: 40%;
+    padding-top: 1rem;
+}
+.mat-header-cell, .mat-cell{
+    justify-content: center;
+}
+.text-primary,
+.comprar {
+    color: #d63384 !important;
+}
+
+a:-webkit-any-link {
+    text-decoration: none !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+// .hamburguesas,
+// .pizzas,
+// .tapeos {
+//     color: black;
+
+// }
+
+.mat-tab-label-active,
+.mat-tab-label-content {
+    color: #d63384 !important;
+}
+
+.wrapper{
+    // padding-top: 100px;
+    // height:  100%;
+    height: calc(100% - 2rem);
+    // height: 60vh;
+    background-color: black;
+    // height: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.mat-row {
+    height: auto;
+}
+
+.mat-cell {
+    padding: 8px 8px 8px 0 !important;
+}

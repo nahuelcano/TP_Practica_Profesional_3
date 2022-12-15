@@ -1,0 +1,36 @@
+<div class="wrapper">
+
+    <form class="contacto-form text-center">
+    >
+        <h2>Dejanos un mensaje:</h2>
+        <div class="row">
+            <mat-form-field class="nombre-width" appearance="fill">
+                <mat-label>Nombre<a> *</a></mat-label>
+                <input matInput >
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field class="apellido-width" appearance="fill">
+                <mat-label>Apellido<a> *</a></mat-label>
+                <input matInput >
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field class="email-width" appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="pat@example.com" [formControl]="email" required type="email" >
+                <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-form-field class="comentario-width" appearance="fill">
+                <mat-label>Deje un mensaje</mat-label>
+                <textarea matInput ></textarea>
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <button mat-raised-button color="primary" [routerLink]="['/inicio']">Enviar</button>
+        </div>
+
+    </form>
+</div>

@@ -1,0 +1,47 @@
+.wrapper {
+    padding-top: 100px;
+    height: 100vh;
+    background-image: url(../../../../../assets/fondoLuna.JPG);
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        // height: 60vh;
+}
+// .wrapper {
+//     padding-top: 100px;
+//     color: #d63384;
+//     background-image: url(../../../assets/fondoBar.jpg);
+//     background-color: #cccccc;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     // height: 100vh;
+//     height: 60vh;
+//     background-attachment: fixed;
+// }
+.titulo{
+    color: white;
+    font-size:xx-large;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+.spacio{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.body{
+    color: rgb(129, 23, 83);
+    background-color: black;
+    font-size: large;
+    padding-left: 3rem;
+    border-color: #d63384;
+    
+    justify-content: center;
+    
+}
+.usuario{
+    color: #d63384;
+}
+.text-center {
+    text-align: center !important;
+}

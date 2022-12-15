@@ -1,0 +1,73 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "target": "es2020",
+    "module": "es2020",
+    "lib": [
+      "es2020",
+      "dom"
+    ],
+    "paths": {
+      // Shared
+      "@gdp/shared/modules": [
+        "src/app/shared/modules/index.ts"
+      ],
+      "@gdp/shared/guards": [
+        "src/app/shared/guards/index.ts"
+      ],
+      // Auth
+      "@gdp/auth/views": [
+        "src/app/modules/auth/views/index.ts"
+      ],
+      "@gdp/auth/modules": [
+        "src/app/modules/auth/modules/index.ts"
+      ],
+      "@gdp/auth/models": [
+        "src/app/modules/auth/models/index.ts"
+      ],
+      "@gdp/auth/services": [
+        "src/app/modules/auth/services/index.ts"
+      ],
+      "@gdp/auth/components": [
+        "src/app/modules/auth/components/index.ts"
+      ],
+      // Dashboard
+      "@gdp/dashboard/views": [
+        "src/app/modules/dashboard/views/index.ts"
+      ],
+      "@gdp/dashboard/modules": [
+        "src/app/modules/dashboard/modules/index.ts"
+      ],
+      "@gdp/dashboard/models": [
+        "src/app/modules/dashboard/models/index.ts"
+      ],
+      "@gdp/dashboard/services": [
+        "src/app/modules/dashboard/services/index.ts"
+      ],
+      "@gdp/dashboard/components": [
+        "src/app/modules/dashboard/components/index.ts"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
+}
